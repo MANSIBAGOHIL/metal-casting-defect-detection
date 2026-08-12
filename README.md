@@ -114,7 +114,7 @@ The models were evaluated using metrics suited to each task: classification metr
 ![YOLOv8 detections](xnet_results/yolov8-detections.png)
 ---
 
-![X-Net Confusion-matrix](images-and-results/xnet_results/Confusion_matrix_20.png.png)
+![X-Net Confusion-matrix](images-and-results/xnet_results/Confusion_matrix_20.png)
 ---
 
 ![Model comparison](assets/model-comparison.png)
