@@ -111,13 +111,21 @@ The models were evaluated using metrics suited to each task: classification metr
 
 ## Preview
 
-![YOLOv8 detections](xnet_results/yolov8-detections.png)
+# Yolov8 train
+![YOLOv8 train](images-and-results/yolov8-results/results.png)
 ---
 
+# Yolov8 Confusion-matrix
+![YOLOv8 Confusion-matrix](images-and-results/yolov8-results/confusion_matrix.png)
+---
+
+
+# X-Net
 ![X-Net Confusion-matrix](images-and-results/xnet_results/Confusion_matrix_20.png)
 ---
 
-![Model comparison](assets/model-comparison.png)
+# X - Net train vs loss
+![X - Net train vs loss](images-and-results/xnet_results/10000_epoch.png)
 ---
 
 
