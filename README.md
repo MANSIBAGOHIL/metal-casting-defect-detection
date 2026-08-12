@@ -107,13 +107,19 @@ The models were evaluated using metrics suited to each task: classification metr
 - Add synthetic and noisy samples to improve generalization
 - Optimize YOLOv8 for NVIDIA Jetson or other edge hardware
 - Apply pruning, quantization, and TensorRT optimization
-- Explore self-supervised learning for limited labelled data
 - Integrate detection and segmentation into a production-line inspection workflow
 
 ## Preview
-![YOLOv8 detections](assets/yolov8-detections.png)
-![X-Net segmentation](assets/xnet-segmentation.png)
+
+![YOLOv8 detections](xnet_results/yolov8-detections.png)
+---
+
+![X-Net Confusion-matrix](xnet_results/Confusion_matrix_20.png.png)
+---
+
 ![Model comparison](assets/model-comparison.png)
+---
+
 
 ## Contributors
 
