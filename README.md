@@ -116,5 +116,5 @@ The models were evaluated using metrics suited to each task: classification metr
 ![Model comparison](assets/model-comparison.png)
 
 ## Contributors
----
+
 Mansiba Gohil
