@@ -109,6 +109,11 @@ The models were evaluated using metrics suited to each task: classification metr
 - Apply pruning, quantization, and TensorRT optimization
 - Integrate detection and segmentation into a production-line inspection workflow
 
+## Running the project
+
+- download the [requirements](requirements.txt)
+- download the [running-the-project.md](Running-the-Project.md) for detailed instructions
+
 ## Preview
 
 ### Yolov8 train
@@ -118,7 +123,6 @@ The models were evaluated using metrics suited to each task: classification metr
 ### Yolov8 Confusion-matrix
 ![YOLOv8 Confusion-matrix](images-and-results/yolov8-results/confusion_matrix.png)
 ---
-
 
 ### X-Net
 ![X-Net Confusion-matrix](images-and-results/xnet_results/Confusion_matrix_20.png)
