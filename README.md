@@ -22,11 +22,11 @@ An image-based quality-inspection project for classifying, locating, and segment
 
 - Classifies metal-casting defects using six classical ML algorithms
 - Detects and localizes defects with YOLOv8 bounding boxes
-- Segments defect boundaries at pixel level with X-Net
+- Uses an X-Net-inspired encoder-decoder network for 10-class image classification
 - Processes grayscale industrial images
 - Converts annotations into YOLO-compatible labels
 - Compares original and rotation-augmented datasets
-- Evaluates models using accuracy, precision, recall, F1-score, mAP, IoU, Dice coefficient, and pixel accuracy
+- Evaluates models using accuracy, precision, recall, F1-score, mAP, IoU, and Dice coefficient
 
 ## Datasets
 
@@ -48,11 +48,11 @@ After removing blurred, overlapping, and incorrectly labelled samples, 842 image
 
 ### GC10-DET
 
-The public GC10-DET dataset contributed approximately 2,294 annotated images across 10 metal-surface defect classes. Bounding-box annotations were converted into YOLO-compatible text files. Images were resized to 640 × 640 for YOLOv8, while 1024 × 512 crops were used for X-Net segmentation.
+The public GC10-DET dataset contributed approximately 2,294 annotated images across 10 metal-surface defect classes. Bounding-box annotations were converted into YOLO-compatible text files. Images were resized to 640 × 640 for YOLOv8, while 1024 × 512 crops were used for X-Net segmentation. you find it or in the [link](https://datasetninja.com/gc10-det)
 
 ## Models
 
-Classical classifiers:
+Classical machine-learning pipeline extracts HOG, LBP, GLCM, and statistical features before training the following classifiers:
 
 - Logistic Regression
 - Decision Tree
@@ -63,8 +63,13 @@ Classical classifiers:
 
 Deep-learning models:
 
-- YOLOv8 for object detection and localization
-- X-Net for pixel-level semantic segmentation
+### YOLOv8 
+- YOLOv8 is used for object detection. The pipeline includes dataset conversion, model training, evaluation, and inference on metal-casting images.
+
+### X-Net
+- The X-Net implementation uses an encoder-decoder architecture with skip connections. The network performs 10-class image classification using global average pooling and a fully connected classification layer.
+
+The model is trained using cross-entropy loss and evaluated using classification accuracy, a classification report, and a confusion matrix.
 
 ## Results
 
